@@ -50,52 +50,31 @@ Berikut langkah-langkah untuk menjalankan project ini di lokal:
 ```bash
 git clone https://github.com/username/nama-repo.git
 
-### 2
+# **INSTALL LARAVEL PROJECT**
+
+# Masuk folder project
 cd nama-repo
-3. Install Dependency Laravel
-### composer install
-4. Setup File Environment
 
-Copy file .env.example menjadi .env
+# Install dependency Laravel
+composer install
 
+# Setup environment file
 cp .env.example .env
-5. Konfigurasi Database
 
-Atur bagian database di file .env sesuai dengan database lokal kamu:
+# **KONFIGURASI DATABASE**
+# Edit file .env:
+# DB_DATABASE=nama_database
+# DB_USERNAME=root
+# DB_PASSWORD=
 
-DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
-6. Generate Key Aplikasi
+# Generate key aplikasi
 php artisan key:generate
-7. Migrasi Database
+
+# Migrasi database
 php artisan migrate
-8. Jalankan Server Laravel
+
+# Jalankan server Laravel
 php artisan serve
 
-Aplikasi akan berjalan di:
-
-http://127.0.0.1:8000
-🗄️ Struktur Tabel Produk
-
-Tabel produk digunakan untuk menyimpan semua data barang yang ada di sistem.
-
-Field	Tipe Data	Keterangan
-id	bigint	Primary key
-nama_produk	string	Nama produk
-harga	integer	Harga produk
-stok	integer	Jumlah stok
-deskripsi	text	Penjelasan produk
-created_at	timestamp	Waktu dibuat
-updated_at	timestamp	Waktu update
-🎯 Tujuan Project
-
-Project ini dibuat untuk tujuan pembelajaran, yaitu:
-
-Memahami konsep CRUD dalam Laravel
-Belajar cara kerja MVC (Model, View, Controller)
-Menghubungkan Laravel dengan database MySQL
-Melatih kemampuan backend development dasar
-Membiasakan penggunaan Git & GitHub dalam project
-
-Dengan project ini, diharapkan dapat memahami alur kerja sistem web dari input data, penyimpanan ke database, hingga menampilkan data ke user.
+# Akses aplikasi
+# http://127.0.0.1:8000
