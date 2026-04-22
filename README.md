@@ -50,7 +50,7 @@ Berikut langkah-langkah untuk menjalankan project ini di lokal:
 ```bash
 git clone https://github.com/username/nama-repo.git
 
-### 2. Masuk ke Folder Project
+### 2
 cd nama-repo
 3. Install Dependency Laravel
 ### composer install
